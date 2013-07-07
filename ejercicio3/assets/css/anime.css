@@ -1,0 +1,44 @@
+aside{
+    clear: both;
+    width: 950px;
+    margin: 10px 0px;
+    height: 340px;
+    overflow: hidden;
+    background: #ECECEC;
+    border: 5px solid #D8D8D8;
+}
+    @-webkit-keyframes animaSlide{
+        from{ 
+            left:0px; 
+        }
+        20%{
+            left:0px;
+        }
+        40%{
+            left:-960px;
+        }
+        60%{
+            left:-960px;
+        }
+        80%{
+            left:-1920px;
+        }
+        to{
+            left:-1920px;
+        }
+    }
+    
+    #slides{
+        width:2920px;
+        height:auto;
+        overflow: hidden;
+        -webkit-animation-name: animaSlide;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+        -webkit-animation-timing-function: ease-in-out; 
+        position:relative;
+    }
+        #slides img{
+            float:left;
+        }
