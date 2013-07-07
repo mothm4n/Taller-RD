@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ES">
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Maketeo con Facebook or Twitter</title>
+
+	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400,300'>
+	<link rel='stylesheet' href='assets/styles.css'>
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+
+	<div id="login">
+
+		<h1><strong>Hola, Guapo </strong> te Identificas.</h1>
+
+		<form action="javascript:void(0);" method="get">
+
+			<fieldset>
+
+				<p><input type="text" required value="Usuario" onBlur="if(this.value=='')this.value='Usuario'" onFocus="if(this.value=='Usuario')this.value='' "></p> <!-- JS because of IE support; better: placeholder="Usuario" -->
+
+				<p><input type="password" required value="Password" onBlur="if(this.value=='')this.value='Password'" onFocus="if(this.value=='Password')this.value='' "></p> <!-- JS because of IE support; better: placeholder="Password" -->
+
+				<p><a href="#">Recuperar Password!</a></p>
+
+				<p><input type="submit" value="Login"></p>
+
+			</fieldset>
+
+		</form>
+
+		<p><span class="btn-round">O puedes </span></p>
+
+		<p>
+
+			<a class="facebook-before"><span class="fontawesome-facebook"></span></a>
+			<button class="facebook">Conectar con Facbook</button>
+
+		</p>
+
+		<p>
+
+			<a class="twitter-before"><span class="fontawesome-twitter"></span></a>
+			<button class="twitter">Conectar con Twitter</button>
+
+		</p>
+
+	</div> <!-- end login -->
+
+</body>
+</html>
