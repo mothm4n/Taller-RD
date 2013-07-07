@@ -13,7 +13,8 @@ html {
 /* --- basic styles ----*/
 
 body {
-  font-family: "Unica One";
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-weight: 400;
   font-size: 1.8em;
   background: #808080;
   text-shadow: 0 1px 0 #CFD2D6; 
@@ -44,4 +45,28 @@ body {
 }
 .nav a:hover {
 	color: #C6342E; 
+}
+.effect {
+  position: absolute;
+  left: -12.5%;
+  -webkit-transition: 0.7s ease-in-out;
+  -moz-transition: 0.7s ease-in-out;
+  -o-transition: 0.7s ease-in-out;
+  -ms-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out; }
+
+  .nav a:nth-child(1):hover ~ .effect { left: 12.5%; }
+  .nav a:nth-child(2):hover ~ .effect { left: 37.5%; }
+  .nav a:nth-child(3):hover ~ .effect { left: 62.5%; }
+  .nav a:nth-child(4):hover ~ .effect { left: 87.5%; }
+
+
+  /* ----- linea -----*/
+.ph-line-nav .effect {
+  width: 90px;
+  height: 2px;
+  bottom: 36px;
+  background: #c6342e;
+  box-shadow: 0 1px 0 white;
+  margin-left:-45px;
 }
