@@ -9,3 +9,39 @@ html, body, div, a {
 
 html {
   line-height: 1; }
+
+/* --- basic styles ----*/
+
+body {
+  font-family: "Unica One";
+  font-size: 1.8em;
+  background: #808080;
+  text-shadow: 0 1px 0 #CFD2D6; 
+}
+
+/* --- para todos los ejemplos ----*/
+
+.nav {
+  text-align: center;
+  overflow: hidden;
+  margin: 2em auto;
+  width: 480px;
+  position: relative; 
+}
+.nav a {
+	display: block;
+	position: relative;
+	float: left;
+	padding: 1em 0 2em;
+	width: 25%;
+	text-decoration: none;
+	color: #1B1B1B;
+	-webkit-transition: .7s;
+	-moz-transition: .7s;
+	-o-transition: .7s;
+	-ms-transition: .7s;
+	transition: .7s; 
+}
+.nav a:hover {
+	color: #C6342E; 
+}
